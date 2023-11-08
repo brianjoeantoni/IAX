@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../../assets/fonts/poppins.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../../assets/fonts/poppins-600.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../../assets/fonts/poppins-800.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  background-color: #f6f6f6;
+}
+
+.container {
+  max-width: 1014px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.navbar {
+  font-weight: 600;
+}
+
+.nav-item {
+  margin-right: 1.5em;
+}
+
+.header {
+  background-color: #ced4da;
+  border-radius: 6px;
+  display: inline-block;
+  letter-spacing: 4px;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.carousel-item {
+  background: left / cover no-repeat;
+  height: 583px !important;
+  transition: transform 0.6s ease;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: left / cover no-repeat;
+}
+
+.carousel-caption {
+  top: 55%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+  width: 50%;
+}
+
+.carousel-button {
+  width: 150px;
+  background: #0d6eac;
+}
+
+@media (max-width: 767px) {
+  .carousel-item {
+    height: 280px !important;
+  }
+
+  .overlay-image {
+    background-position: right !important;
+    opacity: 0.5;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: auto;
+    transform: none !important;
+    text-align: center !important;
+    width: auto;
+  }
+
+  .container {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .reduce {
+    margin-left: -4.5rem !important;
+    margin-right: -4.5rem !important;
+  }
+
+  .align {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.box {
+  background: #ced4da;
+}
+
+footer {
+  background: linear-gradient(90deg, #32c5ef 25%, #d1f5ff 100%);
+  position: relative;
+  padding: 70px 0 50px;
+  margin-top: 40px;
+}
+
+footer .footer_bg {
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}
+
+footer .footer_bg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.banner {
+  padding: 7rem 0;
+}
+
+.banner-text {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: calc(1.425rem + 2.1vw);
+}
+
+.list-icon {
+  height: 50px;
+  margin-right: 10px;
+}
+
+hr {
+  opacity: 1;
+}
+
+.smaller {
+  font-size: 12px;
+}
+
+.fs-5 {
+  font-size: 17px !important;
+}
+
+.fs-7 {
+  font-size: 14px !important;
+}
+
+.background {
+  background: url("../../assets/img/background.jpg") center / cover no-repeat;
+  margin: 0;
+}
+
+.scroll-top {
+  background-color: #555;
+  border-radius: 50%;
+  bottom: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  transition: opacity 0.4s;
+  width: 50px;
+  z-index: 9999;
+}
+
+.scroll-top.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.arrow-right {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' viewBox='10.5 10.5 37 37'%3E%3Cpath d='M12 29h34M29 12l17 17-17 17'/%3E%3C/svg%3E");
+  display: inline-block;
+  font-size: 30px;
+  height: 1em;
+  width: 1em;
+}
+
+.arrow-up {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='white' d='M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448a31.97 31.97 0 1 0 64 0V141.2l105.4 105.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z'/%3E%3C/svg%3E");
+  display: inline-block;
+  font-size: 36px;
+  height: 1em;
+  margin-top: 0.2em;
+  width: 0.75em;
+}
+
+.mail {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805l-134.587 106.49c-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701L48 152.805V112h416zM48 400V214.398l104.938 82.646c21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947L464 214.399V400H48z'/%3E%3C/svg%3E");
+  display: inline-block;
+  font-size: 26px;
+  height: 1em;
+  width: 1em;
+}
+
+.map {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z'/%3E%3C/svg%3E");
+  display: inline-block;
+  font-size: 26px;
+  height: 1em;
+  width: 0.75em;
+}
+
+.phone {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='m497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z'/%3E%3C/svg%3E");
+  display: inline-block;
+  font-size: 26px;
+  height: 1em;
+  width: 1em;
+}
+
+.wa {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222c0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222c0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4l-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2c0-101.7 82.8-184.5 184.6-184.5c49.3 0 95.6 19.2 130.4 54.1c34.8 34.9 56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18c-5.1-1.9-8.8-2.8-12.5 2.8c-3.7 5.6-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4c-32.6-16.3-54-29.1-75.5-66c-5.7-9.8 5.7-9.1 16.3-30.3c1.8-3.7.9-6.9-.5-9.7c-1.4-2.8-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5c-3.2-.2-6.9-.2-10.6-.2c-3.7 0-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3c0 27.3 19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8c35.2 15.2 49 16.5 66.6 13.9c10.7-1.6 32.8-13.4 37.4-26.4c4.6-13 4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z'/%3E%3C/svg%3E");
+  display: inline-block;
+  font-size: 26px;
+  height: 1em;
+  width: 0.876em;
+}
+
+/* language option */
+.dropbtn {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropbtn p {
+  margin: 0;
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+#container-dropdown a {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  transition: 0.2s;
+}
+#container-dropdown a:hover {
+  background-color: #d9d9d9;
+  transition: 0.2s;
+}
+#container-dropdown a:first-child {
+  border-bottom: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+.dropdown-content a {
+  display: block;
+}
+.block {
+  display: block;
+}
+
+.flag {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.horizontal-line {
+  margin: 8px 16px;
+}
+.choose-language {
+  text-transform: capitalize;
+  display: block;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-menu p {
+  margin: 0;
+  font-size: 14px !important;
+}
+
+.contains-arrow {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.contains-arrow p {
+  margin: 0;
+}
+.language-arrow {
+  width: 14px;
+  height: 14px;
+}
